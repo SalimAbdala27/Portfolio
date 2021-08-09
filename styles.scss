@@ -1,12 +1,22 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .starterpage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   width: 100vw;
   background-image: url("./assests/images/portfolio2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+    &__header{
+      color: #EEEEEE;
+    }
+    &__header2{
+      color: #EEEEEE;
+    }
 }
