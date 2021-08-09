@@ -6,8 +6,7 @@
 .starterpage{
   height: 100vh;
   width: 100vw;
-    &__image{
-      height: 100vh;
-      width: 100vw;
-    }
+  background-image: url("./assests/images/portfolio2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
