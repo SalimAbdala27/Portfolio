@@ -1,11 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.starterpage__typer h1 {
+  overflow: hidden;
+  border-right: 0.15em solid purple;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: purple;
+  }
+}
 .starterpage {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -16,8 +43,13 @@
 }
 .starterpage__header {
   color: #EEEEEE;
-  margin: 10px;
+  font-family: "Special Elite", cursive;
+  font-size: 200%;
+  text-align: center;
 }
 .starterpage__header2 {
   color: #EEEEEE;
+  font-family: "Special Elite", cursive;
+  font-size: 200%;
+  text-align: center;
 }
