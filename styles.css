@@ -1,14 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+.nav {
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 5vh;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1B242F;
+  font-size: large;
+  border-bottom: 5px solid #04C2C9;
+}
+.nav__labels {
+  color: #EEEEEE;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav__labels:hover {
+  text-decoration: underline;
+  color: coral;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.starterpage__typer h1 {
+  overflow: hidden;
+  border-right: 0.15em solid purple;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: purple;
+  }
+}
 .starterpage {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   background-image: url("./assests/images/portfolio2.jpeg");
   background-repeat: no-repeat;
@@ -16,8 +68,39 @@
 }
 .starterpage__header {
   color: #EEEEEE;
-  margin: 10px;
+  font-family: "Special Elite", cursive;
+  font-size: 200%;
+  text-align: center;
 }
 .starterpage__header2 {
   color: #EEEEEE;
+  font-family: "Special Elite", cursive;
+  font-size: 200%;
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 95vh;
+  width: 100vw;
+  padding-top: 10px;
+  background-color: #002366;
+  color: #EEEEEE;
+}
+.about__heading {
+  padding-top: 25%;
+  border-bottom: 5px solid #04C2C9;
+}
+
+@media screen and (min-width: 1000px) {
+  .starterpage__header {
+    font-size: 300%;
+  }
+
+  .starterpage__header2 {
+    font-size: 300%;
+  }
 }

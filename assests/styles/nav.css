@@ -1,0 +1,24 @@
+.nav {
+  padding-left: 2%;
+  padding-right: 2%;
+  height: 5vh;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1B242F;
+  font-size: large;
+  border-bottom: 5px solid #04C2C9;
+}
+.nav__labels {
+  color: #EEEEEE;
+  text-align: center;
+  text-decoration: none;
+}
+
+.nav__labels:hover {
+  text-decoration: underline;
+  color: coral;
+}
