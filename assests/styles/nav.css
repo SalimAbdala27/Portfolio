@@ -1,6 +1,4 @@
-@import './variables.scss';
-
-.nav{
+.nav {
   padding-left: 2%;
   padding-right: 2%;
   height: 5vh;
@@ -10,17 +8,17 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: $navcolor;
+  background-color: #1B242F;
   font-size: large;
-  border-bottom: 5px solid $borderbottom;
-    &__labels{
-      color: $primarycolor;
-      text-align: center;
-      text-decoration: none;
-    }
+  border-bottom: 5px solid #04C2C9;
+}
+.nav__labels {
+  color: #EEEEEE;
+  text-align: center;
+  text-decoration: none;
 }
 
-.nav__labels:hover{
+.nav__labels:hover {
   text-decoration: underline;
   color: coral;
 }

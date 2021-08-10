@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-@import url('./assests/styles/nav.scss');
+@import './assests/styles/nav.scss';
+@import './assests/styles/icons.scss';
+@import './assests/styles/variables.scss';
 
 *{
   margin: 0;
@@ -9,7 +11,7 @@
 
 .starterpage__typer h1 {
   overflow: hidden;
-  border-right: .15em solid purple; 
+  border-right: .15em solid $blinkcolor; 
   white-space: nowrap; 
   margin: 0 auto; 
   letter-spacing: .15em;
@@ -25,7 +27,7 @@
 
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: purple; }
+  50% { border-color: $blinkcolor; }
 }
 
 
@@ -34,21 +36,47 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 95vh;
   width: 100vw;
   background-image: url("./assests/images/portfolio2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
     &__header{
-      color: #EEEEEE;
+      color: $primarycolor;
       font-family: 'Special Elite', cursive;
       font-size: 200%;
       text-align: center;
     }
     &__header2{
-      color: #EEEEEE;
+      color: $primarycolor;
       font-family: 'Special Elite', cursive;
       font-size: 200%;
       text-align: center;
     }
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 95vh;
+  width: 100vw;
+  padding-top: 10px;
+  background-color: $secondarycolor;
+  color: $primarycolor;
+    &__heading{
+      padding-top: 25%;
+      border-bottom: 5px solid #04C2C9 ;
+    }
+}
+
+@media screen and (min-width: 1000px){
+  .starterpage__header{
+    font-size: 300%;
+  }
+  .starterpage__header2{
+    font-size: 300%;
+  }
+
 }
