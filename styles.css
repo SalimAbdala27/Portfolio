@@ -80,19 +80,28 @@
 }
 
 .about {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 95vh;
   width: 100vw;
-  padding-top: 10px;
+  height: 95vh;
   background-color: #002366;
   color: #EEEEEE;
 }
+.about__container {
+  display: grid;
+  grid-template-areas: "head head" "skill skill" "me me";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 15vh 40vh 40vh;
+}
 .about__heading {
-  padding-top: 25%;
-  border-bottom: 5px solid #04C2C9;
+  grid-area: head;
+  border: 5px solid blue;
+}
+.about__skill {
+  border: 5px solid blue;
+  grid-area: skill;
+}
+.about__me {
+  border: 5px solid blue;
+  grid-area: me;
 }
 
 @media screen and (min-width: 1000px) {
