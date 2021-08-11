@@ -36,7 +36,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 94.5vh;
+  height: 95vh;
   width: 100vw;
   background-image: url("./assests/images/portfolio2.jpeg");
   background-repeat: no-repeat;
@@ -55,11 +55,9 @@
     }
 }
 
-
-
 .about{
   width: 100vw;
-  height: 95vh;
+  height: 100vh;
     background-color: $secondarycolor;
     color: $primarycolor;
     font-family: 'Merriweather', serif;
@@ -72,17 +70,18 @@
       "me me me"
       "writing writing writing";
       grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 5vh 5vh 40vh 5vh 40vh;
+      grid-template-rows: 10vh 5vh 40vh 5vh 40vh;
     }
     &__heading{
       grid-area: head;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: flex-end;
       text-decoration: underline 5px solid $borderbottom;
     }
     &__skill{
       grid-area: skill;
+      margin-top: 15px;
       padding-left: 10px;
       padding-top: 10px;
       display: flex;
@@ -94,7 +93,7 @@
     &__skill-icons{
       grid-area: icons;
       border-bottom: 3px white solid ;
-      padding-top: 10px;
+      padding-top: 20px;
       padding-left: 10px;
     }
     &__me{
@@ -116,6 +115,22 @@
     }
 }
 
+.portfolio{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: $primarycolor;
+  padding-top: 35px;
+  font-family: 'Merriweather', serif;
+    &__header{
+      color: $secondarycolor;
+      text-decoration: underline 5px solid $borderbottom;
+    }
+}
+
 
 @media screen and (min-width: 1000px){
   .starterpage__header{
@@ -126,7 +141,7 @@
   }
   .about{
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
       background-color: $secondarycolor;
       color: $primarycolor;
       font-family: 'Merriweather', serif;
@@ -137,14 +152,14 @@
         "skill me me "
         "icons writing writing ";
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 5vh 5vh 80vh;
+        grid-template-rows: 15vh 5vh 75vh;
       }
       &__heading{
-        padding: 20px;
+        padding: 10px;
         grid-area: head;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         text-decoration: underline 5px solid $borderbottom;
         font-size: 30px;
       }
@@ -200,5 +215,9 @@
         margin-left: 20px;
         margin-right: 30px;
       }
+  }
+  .portfolio{
+    height: 95vh;
+    width: 100vw;
   }
 }
