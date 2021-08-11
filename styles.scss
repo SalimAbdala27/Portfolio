@@ -55,21 +55,65 @@
     }
 }
 
+// .about{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: center;
+//   height: 95vh;
+//   width: 100vw;
+//   padding-top: 20px;
+//   background-color: $secondarycolor;
+//   color: $primarycolor;
+//     &__heading{
+//       display: flex;
+//       justify-content: flex-start;
+//       align-items: center;
+//       padding-top: 25%;
+//       border-bottom: 5px solid #04C2C9;
+//       font-size: 40px;
+//     }
+// }
+
+// .about__skill{
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+// }
+// .about__me{
+//   display: flex;
+//   justify-content: flex-start;
+//   align-items: flex-end;
+// }
+
 .about{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  height: 95vh;
   width: 100vw;
-  padding-top: 10px;
-  background-color: $secondarycolor;
-  color: $primarycolor;
+  height: 95vh;
+    background-color: $secondarycolor;
+    color: $primarycolor;
+    &__container{
+      display: grid;
+      grid-template-areas: 
+      "head head"
+      "skill skill"
+      "me me";
+      grid-template-columns: 1fr 2fr;
+      grid-template-rows: 15vh 40vh 40vh;
+    }
     &__heading{
-      padding-top: 25%;
-      border-bottom: 5px solid #04C2C9 ;
+      grid-area: head;
+      border: 5px solid blue;
+    }
+    &__skill{
+      border: 5px solid blue;
+      grid-area: skill;
+    }
+    &__me{
+      border: 5px solid blue;
+      grid-area: me;
     }
 }
+
 
 @media screen and (min-width: 1000px){
   .starterpage__header{
