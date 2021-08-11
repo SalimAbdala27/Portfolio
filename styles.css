@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Special+Elite&display=swap");
 .nav {
+  font-family: "Merriweather", serif;
   padding-left: 2%;
   padding-right: 2%;
   height: 5vh;
@@ -60,7 +61,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 95vh;
+  height: 94.5vh;
   width: 100vw;
   background-image: url("./assests/images/portfolio2.jpeg");
   background-repeat: no-repeat;
@@ -84,24 +85,53 @@
   height: 95vh;
   background-color: #002366;
   color: #EEEEEE;
+  font-family: "Merriweather", serif;
 }
 .about__container {
   display: grid;
-  grid-template-areas: "head head" "skill skill" "me me";
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 15vh 40vh 40vh;
+  grid-template-areas: "head head head " "skill skill skill" "icons icons icons" "me me me" "writing writing writing";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5vh 5vh 40vh 5vh 40vh;
 }
 .about__heading {
   grid-area: head;
-  border: 5px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: underline 5px solid #04C2C9;
 }
 .about__skill {
-  border: 5px solid blue;
   grid-area: skill;
+  padding-left: 10px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: underline 3px solid #04C2C9;
+  border-top: 3px white solid;
+}
+.about__skill-icons {
+  grid-area: icons;
+  border-bottom: 3px white solid;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .about__me {
-  border: 5px solid blue;
   grid-area: me;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: underline 3px solid #04C2C9;
+  border: 0px 5px 5px 5px white solid;
+  text-align: center;
+}
+.about__me-writing {
+  grid-area: writing;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 @media screen and (min-width: 1000px) {
@@ -111,5 +141,80 @@
 
   .starterpage__header2 {
     font-size: 300%;
+  }
+
+  .about {
+    width: 100vw;
+    height: 95vh;
+    background-color: #002366;
+    color: #EEEEEE;
+    font-family: "Merriweather", serif;
+  }
+  .about__container {
+    display: grid;
+    grid-template-areas: "head head head " "skill me me " "icons writing writing ";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5vh 5vh 80vh;
+  }
+  .about__heading {
+    padding: 20px;
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: underline 5px solid #04C2C9;
+    font-size: 30px;
+  }
+  .about__skill {
+    grid-area: skill;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: underline 3px solid #04C2C9;
+    border-top: 3px white solid;
+    border-left: 3px white solid;
+    border-right: 3px white solid;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .about__skill-icons {
+    grid-area: icons;
+    border-bottom: 3px white solid;
+    border-left: 3px white solid;
+    border-right: 3px white solid;
+    padding: 20px;
+    padding-top: 40px;
+    margin-left: 20px;
+  }
+  .about__me {
+    grid-area: me;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-decoration: underline 3px solid #04C2C9;
+    text-align: center;
+    border-top: 3px white solid;
+    border-right: 3px white solid;
+    border-left: 3px white solid;
+    margin-left: 20px;
+    margin-right: 30px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  .about__me-writing {
+    grid-area: writing;
+    border-right: 3px white solid;
+    border-bottom: 3px white solid;
+    border-left: 3px white solid;
+    padding: 20px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 20px;
+    margin-right: 30px;
   }
 }
