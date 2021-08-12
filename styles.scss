@@ -208,6 +208,9 @@
     color: $blinkcolor;
     font-size: 20px;
     text-decoration: none;
+    a{
+      color: $iconcolor;
+    }
     .footer__icon-envelope{
       padding: 10px;
     }
@@ -319,6 +322,7 @@
     width: 100vw;
     padding: 50px;
   }
+  
   ::placeholder{
     color: $formcolortext;
   }
@@ -357,6 +361,7 @@
     font-size: 20px;
   }
   .footer__icon{
+    color: $blinkcolor;
     font-size: 30px;
   }
 }
