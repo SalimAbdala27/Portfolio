@@ -230,6 +230,9 @@
   font-size: 20px;
   text-decoration: none;
 }
+.footer__icon a {
+  color: #AA2EE6;
+}
 .footer__icon .footer__icon-envelope {
   padding: 10px;
 }
@@ -380,6 +383,7 @@
   }
 
   .footer__icon {
+    color: purple;
     font-size: 30px;
   }
 }
