@@ -182,17 +182,21 @@
 .footer{
   height: 20vh;
   width: 100vw;
+  display: grid;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   background-color: $primarycolor;
   color: $secondarycolor;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   &__header{
     font-family: 'Merriweather', serif;
   }
-
+  &__icon{
+    color: $blinkcolor;
+    padding-bottom: 10px;
+  }
 }
 
 

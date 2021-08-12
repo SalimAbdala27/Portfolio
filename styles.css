@@ -202,16 +202,21 @@
 .footer {
   height: 20vh;
   width: 100vw;
+  display: grid;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   background-color: #EEEEEE;
   color: #002366;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .footer__header {
   font-family: "Merriweather", serif;
+}
+.footer__icon {
+  color: purple;
+  padding-bottom: 10px;
 }
 
 @media screen and (min-width: 1000px) {
