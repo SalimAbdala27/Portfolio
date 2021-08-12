@@ -180,7 +180,6 @@
 }
 .footer__header {
   font-family: "Merriweather", serif;
-  font-style: italic;
 }
 
 @media screen and (min-width: 1000px) {
@@ -275,5 +274,9 @@
 
   .contact {
     padding: 50px;
+  }
+
+  .footer {
+    padding-bottom: 20px;
   }
 }
