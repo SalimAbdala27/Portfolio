@@ -228,6 +228,7 @@
   align-items: center;
   color: purple;
   font-size: 20px;
+  text-decoration: none;
 }
 .footer__icon .footer__icon-envelope {
   padding: 10px;
