@@ -136,7 +136,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   width: 100vw;
   background-color: $secondarycolor;
   padding-top: 35px;
@@ -145,6 +145,22 @@
       color: $primarycolor;
       text-decoration: underline 5px solid $borderbottom;
     }
+}
+
+.footer{
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: $primarycolor;
+  color: $secondarycolor;
+  padding-bottom: 10px;
+  &__header{
+    font-family: 'Merriweather', serif;
+  }
+
 }
 
 
