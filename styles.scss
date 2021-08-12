@@ -182,7 +182,6 @@
 .footer{
   height: 20vh;
   width: 100vw;
-  display: grid;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -194,8 +193,30 @@
     font-family: 'Merriweather', serif;
   }
   &__icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: $blinkcolor;
-    padding-bottom: 10px;
+    font-size: 20px;
+    .footer__icon-envelope{
+      padding: 10px;
+    }
+    .footer__icon-envelope:hover{
+      opacity: 50%;
+    }
+    .footer__icon-git{
+      padding: 10px;
+    }
+    .footer__icon-git:hover{
+      opacity: 50%;
+    }
+    .footer__icon-linkedin{
+      padding: 10px;
+    }
+    .footer__icon-linkedin:hover{
+      opacity: 50%;
+    }
   }
 }
 
@@ -293,6 +314,10 @@
     padding: 50px;
   }
   .footer{
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+    font-size: 20px;
+  }
+  .footer__icon{
+    font-size: 30px;
   }
 }
