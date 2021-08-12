@@ -151,6 +151,22 @@
   text-decoration: underline 5px solid #04C2C9;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #002366;
+  padding-top: 35px;
+  font-family: "Merriweather", serif;
+}
+.contact__header {
+  color: #EEEEEE;
+  text-decoration: underline 5px solid #04C2C9;
+}
+
 @media screen and (min-width: 1000px) {
   .starterpage__header {
     font-size: 300%;
@@ -236,7 +252,12 @@
   }
 
   .portfolio {
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
+    padding: 50px;
+  }
+
+  .contact {
+    padding: 50px;
   }
 }
