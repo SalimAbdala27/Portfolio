@@ -131,6 +131,10 @@
     }
 }
 
+::placeholder{
+  color: $formcolortext;
+}
+
 .contact{
   display: flex;
   flex-direction: column;
@@ -145,6 +149,42 @@
       color: $primarycolor;
       text-decoration: underline 5px solid $borderbottom;
     }
+    &__form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+    }
+    &__form-name{
+      margin: 10px;
+      width: 200px;
+      height: 30px;
+      background-color: $formcolor;
+    }
+    &__form-email{
+      margin: 10px;
+      width: 200px;
+      height: 30px;
+      background-color: $formcolor;
+    }
+    &__form-comment{
+      margin: 10px;
+      width: 200px;
+      background-color: $formcolor;
+      color: $formcolortext;
+    }
+    &__btn{
+      width: 100px;
+      height: 25px;
+      border: 3px $primarycolor solid;
+      background-color: $secondarycolor;
+      color: $primarycolor;
+    }
+    &__btn:hover{
+      background-color: $primarycolor;
+      color: $secondarycolor;
+    }
 }
 
 .footer{
@@ -156,11 +196,37 @@
   align-items: center;
   background-color: $primarycolor;
   color: $secondarycolor;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   &__header{
     font-family: 'Merriweather', serif;
   }
-
+  &__icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: $blinkcolor;
+    font-size: 20px;
+    text-decoration: none;
+    .footer__icon-envelope{
+      padding: 10px;
+    }
+    .footer__icon-envelope:hover{
+      opacity: 50%;
+    }
+    .footer__icon-git{
+      padding: 10px;
+    }
+    .footer__icon-git:hover{
+      opacity: 50%;
+    }
+    .footer__icon-linkedin{
+      padding: 10px;
+    }
+    .footer__icon-linkedin:hover{
+      opacity: 50%;
+    }
+  }
 }
 
 
@@ -253,7 +319,44 @@
     width: 100vw;
     padding: 50px;
   }
+  ::placeholder{
+    color: $formcolortext;
+  }
   .contact{
     padding: 50px;
+    &__form-name{
+      margin: 10px;
+      width: 300px;
+      height: 50px;
+      background-color: $formcolor;
+    }
+    &__form-email{
+      margin: 10px;
+      width: 300px;
+      height: 50px;
+      background-color: $formcolor;
+    }
+    &__form-comment{
+      margin: 10px;
+      width: 300px;
+      background-color: $formcolor;
+      color: $formcolortext;
+    }
+    &__btn{
+      margin-top: 30px;
+      width: 200px;
+      height: 50px;
+      border: 3px $primarycolor solid;
+      background-color: $secondarycolor;
+      color: $primarycolor;
+      font-size: 20px;
+    }
+  }
+  .footer{
+    padding-bottom: 40px;
+    font-size: 20px;
+  }
+  .footer__icon{
+    font-size: 30px;
   }
 }

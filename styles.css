@@ -151,6 +151,10 @@
   text-decoration: underline 5px solid #04C2C9;
 }
 
+::placeholder {
+  color: #5588A3;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -166,6 +170,42 @@
   color: #EEEEEE;
   text-decoration: underline 5px solid #04C2C9;
 }
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+.contact__form-name {
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+  background-color: #145374;
+}
+.contact__form-email {
+  margin: 10px;
+  width: 200px;
+  height: 30px;
+  background-color: #145374;
+}
+.contact__form-comment {
+  margin: 10px;
+  width: 200px;
+  background-color: #145374;
+  color: #5588A3;
+}
+.contact__btn {
+  width: 100px;
+  height: 25px;
+  border: 3px #EEEEEE solid;
+  background-color: #002366;
+  color: #EEEEEE;
+}
+.contact__btn:hover {
+  background-color: #EEEEEE;
+  color: #002366;
+}
 
 .footer {
   height: 20vh;
@@ -176,11 +216,37 @@
   align-items: center;
   background-color: #EEEEEE;
   color: #002366;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
 }
 .footer__header {
   font-family: "Merriweather", serif;
-  font-style: italic;
+}
+.footer__icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: purple;
+  font-size: 20px;
+  text-decoration: none;
+}
+.footer__icon .footer__icon-envelope {
+  padding: 10px;
+}
+.footer__icon .footer__icon-envelope:hover {
+  opacity: 50%;
+}
+.footer__icon .footer__icon-git {
+  padding: 10px;
+}
+.footer__icon .footer__icon-git:hover {
+  opacity: 50%;
+}
+.footer__icon .footer__icon-linkedin {
+  padding: 10px;
+}
+.footer__icon .footer__icon-linkedin:hover {
+  opacity: 50%;
 }
 
 @media screen and (min-width: 1000px) {
@@ -273,7 +339,47 @@
     padding: 50px;
   }
 
+  ::placeholder {
+    color: #5588A3;
+  }
+
   .contact {
     padding: 50px;
+  }
+  .contact__form-name {
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: #145374;
+  }
+  .contact__form-email {
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    background-color: #145374;
+  }
+  .contact__form-comment {
+    margin: 10px;
+    width: 300px;
+    background-color: #145374;
+    color: #5588A3;
+  }
+  .contact__btn {
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    border: 3px #EEEEEE solid;
+    background-color: #002366;
+    color: #EEEEEE;
+    font-size: 20px;
+  }
+
+  .footer {
+    padding-bottom: 40px;
+    font-size: 20px;
+  }
+
+  .footer__icon {
+    font-size: 30px;
   }
 }
