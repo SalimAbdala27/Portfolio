@@ -145,6 +145,38 @@
       color: $primarycolor;
       text-decoration: underline 5px solid $borderbottom;
     }
+    &__form{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+    }
+    &__form-name{
+      margin: 10px;
+      width: 200px;
+      height: 30px;
+    }
+    &__form-email{
+      margin: 10px;
+      width: 200px;
+      height: 30px;
+    }
+    &__form-comment{
+      margin: 10px;
+      width: 200px;
+    }
+    &__btn{
+      width: 100px;
+      height: 25px;
+      border: 3px $primarycolor solid;
+      background-color: $secondarycolor;
+      color: $primarycolor;
+    }
+    &__btn:hover{
+      background-color: $primarycolor;
+      color: $secondarycolor;
+    }
 }
 
 .footer{
