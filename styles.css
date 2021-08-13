@@ -114,8 +114,12 @@
 .about__skill-icons {
   grid-area: icons;
   border-bottom: 3px white solid;
-  padding-top: 20px;
-  padding-left: 10px;
+  padding-top: 5px;
+  padding-left: 15px;
+}
+.about__skill-icons .fa-ad {
+  padding: 30px;
+  font-size: 40px;
 }
 .about__me {
   grid-area: me;
@@ -149,6 +153,29 @@
 .portfolio__header {
   color: #002366;
   text-decoration: underline 5px solid #04C2C9;
+}
+.portfolio__img1 {
+  margin-top: 20px;
+  width: 200px;
+  height: 100px;
+}
+.portfolio__img1-desc {
+  background-color: #002366;
+  width: 200px;
+  height: 25px;
+}
+.portfolio__img1-desc .portfolio__img1-cap1 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #EEEEEE;
+  padding-left: 25px;
+}
+.portfolio__img1-desc .fa-mouse-pointer {
+  text-decoration: none;
+  padding-left: 25px;
+}
+.portfolio__img1-desc .fa-mouse-pointer:hover {
+  opacity: 50%;
 }
 
 ::placeholder {
@@ -340,6 +367,34 @@
     height: 100vh;
     width: 100vw;
     padding: 50px;
+  }
+  .portfolio__img1 {
+    margin-top: 20px;
+    width: 400px;
+    height: 200px;
+  }
+  .portfolio__img1-desc {
+    background-color: #002366;
+    width: 400px;
+    height: 50px;
+  }
+  .portfolio__img1-desc .portfolio__img1-cap1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    color: #EEEEEE;
+    padding-left: 75px;
+    padding-top: 10px;
+  }
+  .portfolio__img1-desc .fa-mouse-pointer {
+    text-decoration: black;
+    padding-left: 50px;
+    font-size: 20px;
+  }
+  .portfolio__img1-desc .fa-mouse-pointer:hover {
+    opacity: 50%;
   }
 
   ::placeholder {
