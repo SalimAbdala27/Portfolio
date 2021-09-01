@@ -14,6 +14,7 @@
   background-color: $navcolor;
   font-size: large;
   border-bottom: 5px solid $borderbottom;
+  z-index: 9999;
     &__labels{
       color: $primarycolor;
       text-align: center;

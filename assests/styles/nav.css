@@ -12,6 +12,7 @@
   background-color: #1B242F;
   font-size: large;
   border-bottom: 5px solid #04C2C9;
+  z-index: 9999;
 }
 .nav__labels {
   color: #EEEEEE;
