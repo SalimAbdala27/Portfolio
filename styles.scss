@@ -95,10 +95,6 @@
       border-bottom: 3px white solid ;
       padding-top: 5px;
       padding-left: 15px;
-      .fa-ad{
-        padding: 30px;
-        font-size: 40px;
-      }
     }
     &__me{
       grid-area: me;
@@ -117,6 +113,14 @@
       justify-content: flex-start;
       align-items: flex-start;
     }
+}
+.icons-containter{
+  font-size: 22px;
+  padding: 30px;
+}
+.icons-containter:hover{
+  content: "HTML 5";
+  color: green;
 }
 
 .portfolio{
@@ -529,8 +533,9 @@
         padding-top: 40px;
         margin-left: 20px;
       }
-      .fa-ad{
+      .icons-containter{
         font-size: 60px;
+        padding: 40px;
       }
       &__me{
         grid-area: me;

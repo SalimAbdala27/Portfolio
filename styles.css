@@ -118,10 +118,6 @@
   padding-top: 5px;
   padding-left: 15px;
 }
-.about__skill-icons .fa-ad {
-  padding: 30px;
-  font-size: 40px;
-}
 .about__me {
   grid-area: me;
   padding-left: 10px;
@@ -138,6 +134,16 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.icons-containter {
+  font-size: 22px;
+  padding: 30px;
+}
+
+.icons-containter:hover {
+  content: "HTML 5";
+  color: green;
 }
 
 .portfolio {
@@ -527,8 +533,9 @@
     padding-top: 40px;
     margin-left: 20px;
   }
-  .about .fa-ad {
+  .about .icons-containter {
     font-size: 60px;
+    padding: 40px;
   }
   .about__me {
     grid-area: me;
