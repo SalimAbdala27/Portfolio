@@ -198,6 +198,50 @@
   color: #cc6699;
 }
 
+.iconjs:hover {
+  color: #f0db4f;
+}
+
+.iconreact:hover {
+  color: #61DBFB;
+}
+
+.iconjest:hover {
+  color: #CC3534;
+}
+
+.icongithub:hover {
+  color: #171515;
+}
+
+.icongcp:hover {
+  color: #4885ed;
+}
+
+.iconter:hover {
+  color: #CDCDCD;
+}
+
+.iconjava:hover {
+  color: #f89820;
+}
+
+.iconspring:hover {
+  color: #77bc1e;
+}
+
+.iconsql:hover {
+  color: #00758f;
+}
+
+.iconboot:hover {
+  color: #563d7c;
+}
+
+.iconnpm:hover {
+  color: #CC3534;
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
