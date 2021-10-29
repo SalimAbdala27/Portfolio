@@ -33,7 +33,7 @@
 }
 
 .card__button {
-  border-radius: 10%;
+  border-radius: 10px;
   width: 120px;
   height: 40px;
   cursor: pointer;
@@ -242,6 +242,10 @@
   color: #CC3534;
 }
 
+.iconbabel:hover {
+  color: #F9DD3D;
+}
+
 .portfolio {
   display: flex;
   flex-direction: column;
@@ -382,6 +386,7 @@
   background: linear-gradient(40deg, #355cc9, #438af3);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  font-size: 30px;
 }
 .portfolio .back .info .icon {
   margin-left: 0.3em;
