@@ -10,7 +10,7 @@
 }
 
 .card__button{
-  border-radius: 10%;
+  border-radius: 10px;
   width: 120px;
   height: 40px;
   cursor: pointer;
@@ -27,6 +27,8 @@
 .description{
   // text-align: center;
 }
+
+
 
 .starterpage__typer h1 {
   overflow: hidden;
@@ -222,6 +224,10 @@ color: #4885ed;
   color: #CC3534;
 }
 
+.iconbabel:hover{
+  color: #F9DD3D;
+}
+
 .portfolio{
   display: flex;
   flex-direction: column;
@@ -369,6 +375,7 @@ color: #4885ed;
 
 				-webkit-text-fill-color: transparent;
 				-webkit-background-clip: text;
+        font-size: 30px;
 			}
 			font-size: 1.2em;
 		}
