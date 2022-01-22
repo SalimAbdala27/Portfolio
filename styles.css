@@ -32,10 +32,6 @@
   box-sizing: border-box;
 }
 
-#newting {
-  color: black;
-}
-
 .card__button {
   border-radius: 10px;
   width: 120px;
